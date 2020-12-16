@@ -1,0 +1,5 @@
+fastai==2.1.8
+torch==1.7.0
+dill==0.3.3
+numpy==1.19.4
+matplotlib==3.3.2
