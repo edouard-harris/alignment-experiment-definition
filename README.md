@@ -227,7 +227,7 @@ Binary loss functions are defined on the domain `[-1, 1]` where a positive numbe
 
   Typical value: `[-1, -0.5, 0, 0.5, 1]`
 
-- `piecewise_func_list [list]`: A list of `lambda` functions that define the functions on each subdomain in `domain_interval` that will be glued together at the boundaries. This list should have **one element less** than the `domain_interval` list. The values of the functions in this list should be **approximately equal** at teir respective boundary points (to within `1e-15`).
+- `piecewise_func_list [list]`: A list of `lambda` functions that define the functions on each subdomain in `domain_interval` that will be glued together at the boundaries. This list should have **one element less** than the `domain_interval` list. The values of the functions in this list should be **approximately equal** at their respective boundary points (to within `1e-15`).
 
 🟢 The `loss_function_factory` function should output a loss function that can be used normally in, e.g., `run_one_experiment`.
 
