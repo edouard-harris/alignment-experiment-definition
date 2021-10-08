@@ -88,7 +88,7 @@ def train_model(
         raw_gradients = train_epoch(
             model,
             data_loader=data_loader,
-            optimizer=Optimizer(model.parameters(), lr),
+            optimizer=optimizer(model.parameters(), lr),
             loss_function=loss_function
         )
 
