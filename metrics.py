@@ -17,7 +17,7 @@ def gradient_2_norm(raw_gradients):
 # This lets us build binary loss functions by connecting loss functions piecewise
 # on the (predictions - targets) domain. domain_interval is a list of floats that
 # defines the boundaries between loss functions in piecewise_func_list.
-# See https://drive.google.com/file/d/1rUxEoPjFjYMCNAowvP-4dq0JlYXmMzE4/view?usp=sharing
+# See hhttps://drive.google.com/file/d/1JH6M_m26bVh4QHL6h0Tzxugatp1_c2OW/view?usp=sharing
 # for calculations related to this function factory.
 # Example:
 # lf = metrics.loss_function_factory([-1, 0, 1], [lambda x: x**2, lambda x: x])
@@ -53,7 +53,9 @@ def loss_function_factory(domain_interval, piecewise_func_list):
 # We need to cover the edge case of (predictions - targets) = 1 below, because
 # PyTorch calculates the gradient incorrectly if we leave in the `& (diffs < domain[1])`
 # in the conditional statement. Note that adding a buffer like `& (diffs < domain[1] + 0.01)`
-# (in this edge case ONLY!) would also solve the problem.
+# (in this edge case ONLY!) would also solve the problem. See Part 2 of the experiment report
+# for more details on debugging this issue:
+# https://docs.google.com/document/d/1ZAGvsyjVAweXpAg6R0WbL54g8bi2tGcrUYghyQGsGi4/edit?usp=sharing
             if domain[1] == 1:
                 losses_ = torch.where(
                     domain[0] <= diffs,

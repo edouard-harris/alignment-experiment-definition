@@ -12,9 +12,9 @@ As a sanity check, I also used this repo to replicate a small part of the [Rethi
 
 I used this repo to run a series of experiments on the MNIST sample and CIFAR10 datasets in early December 2020.
 
-- Written notes and results related to those experiments [can be found in this Google doc](https://docs.google.com/document/d/1wQrgQrhFhMM3B-18SZkQrd0hOso-OcLi1YcSxLxRtjo/edit?usp=sharing). This doc is publicly viewable, so feel free to take a look. If you'd like to leave feedback or have questions about it, please request comment access.
+- Written notes and results related to those experiments [can be found in this Google doc](https://docs.google.com/document/d/1ZAGvsyjVAweXpAg6R0WbL54g8bi2tGcrUYghyQGsGi4/edit?usp=sharing). This doc is publicly viewable, so feel free to take a look. If you'd like to leave feedback or have questions about it, please request comment access.
 
-- I've saved the results from those experiments. They're permanently hosted in [this publicly accessible zip archive on Google Drive](https://drive.google.com/file/d/1S0KPkH9ctTO9gB0OOFOsIh1xoROsluVv/view?usp=sharing). Feel free to download them if you'd like to verify or reproduce.
+- I've saved the results from those experiments. They're permanently hosted in [this publicly accessible zip archive on Google Drive](https://drive.google.com/file/d/1YdrwFX_O4zCxmPE0fI5pb_iGec4FnM6d/view?usp=sharing). Feel free to download them if you'd like to verify or reproduce.
 
 ## Installation, setup, and testing
 
